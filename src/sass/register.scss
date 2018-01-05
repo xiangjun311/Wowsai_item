@@ -5,20 +5,40 @@
 	.left{
 		width: 656px;
 		float: left;
-		border:1px solid red;
+		/*border:1px solid red;*/
 		form{
 			font-size: 12px;
 			padding-left: 80px;
 			h2{color: #229ca8;font-size: 19px;}
 			p{
 				margin: 20px 0;
-				input{margin: 0 10px;}
+				line-height: 26px;
+				input{
+					margin: 0 10px;
+					height: 27px;
+					width: 222px;
+					border:none;
+					border: 2px solid #ccc;
+				}
+				.radios,.cbox{
+					width: 13px;
+					height: 13px;
+				}
+				.yanzhengma{width: 130px;}
+				img{
+					width: 80px;
+					height: 26px;
+					/*display: inline-block;*/
+					border:1px solid;
+					margin-right: 10px;
+				}
 				span{
 					width: 60px;
 					display: inline-block;
 					text-align: right;
 				}
 				i{color: #9c9c9c;}
+				a{color: #229ca8;}
 			}
 		}
 	}

@@ -1,0 +1,68 @@
+/*.bg{
+	width: 100%;
+	height:5000px;
+	background: #000;
+	opacity: 0.5;
+	position: relative;
+	z-index: 99;
+}
+.login_box{	
+	width: 511px;
+	height: 449px;
+	position: absolute;
+	z-index: 999;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto ;
+	.container{
+		width: 511px;
+		height: 449px;
+		background: #fff;
+	}
+}*/
+.modal-content{
+	width: 511px;
+	height: 449px;
+	.modal-header{background: #f5f5f5;}
+	.modal-body{
+		padding-left: 48px;
+		form{			
+			.form-group{
+				input{
+					width: 255px;
+					height: 35px;
+					display: inline-block;
+				}
+			}
+			.btn{
+				width: 102px;
+				height: 35px;
+			}
+		}
+	}
+	.foot{
+		
+		.icn{	
+			padding-left: 48px;	
+			margin: 15px;
+			a{
+				display: inline-block;
+				margin:0px 10px 10px 0;
+			}
+		}
+	}
+	fieldset{
+				border-top: 1px dashed #ccc;
+				width: 509px;	
+			}
+			legend{
+				width:280PX;
+				font-size: 12px;
+				text-align: center;
+				border:0;
+				padding: 0 5px;
+			}	
+}
+
