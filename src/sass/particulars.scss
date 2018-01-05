@@ -1,0 +1,75 @@
+.main{
+	.container{
+		width: 1130px;
+		border: 1px solid red;
+		padding-top:25px;
+		.right{
+			width: 835px;
+			min-height: 1000px;
+			border: 1px solid red;
+			float: right;
+			.commodity{
+				height: 460px;
+				border:1px solid red;
+				.img{
+					width: 420px;
+					height: 450px;
+					float: left;
+					img{
+					width: 420px;
+					height: 420px;
+					
+					}
+					p{
+						line-height: 35px;
+						a{
+							display: inline-block;
+							width: 16px;
+							height: 16px;
+							background:url(../images/jiathis_ico.png);
+						}
+						a:nth-child(1){background-position: 0 -560px;}
+						a:nth-child(2){background-position: 0 -576px;}
+						a:nth-child(3){background-position: 0 -592px;}
+						a:nth-child(4){background-position: 0 -608px;}
+					}
+				}
+				.infor_cart{
+					width: 378px;
+					height: 420px;
+					float: right;
+					/*border: 1px solid;*/
+					p{
+						font-size: 18px;
+						border-bottom: 1px solid #f6f6f6;
+						line-height: 30px;
+						padding-bottom: 15px;
+					}
+					.price{
+						span{
+							color: #ff7800;
+							font-size: 20px;
+							font-weight: 600;
+						}
+					}
+					.add_bg{
+						width: 378px;
+						height: 86px;
+						background: url(../images/diagonalMaskWhiteBg.gif) #e5e5e5;
+						padding:18px 60px;
+						.add{
+							border-color: #46c600;
+							width: 261px;
+							height: 50px;
+							text-align: center;
+							line-height: 40px;
+							font-size: 18px;
+							background: url(../images/buycar2.png) no-repeat 44px center #46c600;
+							}
+					}
+				}
+				
+			}
+		}
+	}
+}

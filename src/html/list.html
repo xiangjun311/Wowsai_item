@@ -2,26 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>列表</title>
-	<script src="/lib/requirejs/require.js" data-main="/js/list"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>商品详情</title>
+	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" href="../css/list.css">
+	<script src="../lib/requirejs/require.js" data-main="../js/list"></script>
 </head>
 <body>
 	<div class="header"></div>
-
-	<div class="main">
-		
+	<!-- 广告 -->
+	<div class="banner auto"></div>
+	<div class="nav_bg auto">
+		<!-- Single button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			全部价格<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">全部价格</a></li>
+				<li><a href="#">0~50</a></li>
+				<li><a href="#">51~100</a></li>
+				<li><a href="#">101~150</a></li>			
+			</ul>
+		</div>
 	</div>
+	
+	<div class="container auto">
+		<div class="left"></div>
+		<!-- 此处动态写入左边部分 -->
+		<!-- 商品列表 -->
+		<div class="main clearfix">
+			
+		</div>
+	</div>
+
 
 	<script type="text/html" id="list_template">
 		{{each products as product}}
-		<div>
-			<div class="title">{{product.title}}</div>
-			<div class="price">{{product.price}}</div>
-			<div class="add">加入购物车</div>
+		
+		<!-- 商品列表 -->
+		<div class="list_box">
+				<img src="{{product.img}}" class="img">
+				<div class="title">{{product.title}}</div>
+				<div class="price">{{product.price}}</div>
+				<div class="add">加入购物车</div>		
 		</div>
 		{{/each}}
 	</script>
 
 	<div class="footer"></div>
+
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

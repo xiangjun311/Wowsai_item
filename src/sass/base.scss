@@ -16,6 +16,8 @@ em,i,strong,b{ font-style:normal; font-weight:normal; }
 
 ul, ol { list-style:none; } 
 
+p{font-size:12px;}
+
 a {text-decoration:none; color: #363636; }
 a:hover {text-decoration:none; }
 
@@ -136,3 +138,27 @@ a:hover {text-decoration:none; }
 	}
 }
 
+/*左边部分*/
+.container{
+	width: 1130px;
+	border: 1px solid red;
+	padding-top:25px;
+	.left{
+		width:242px;
+		height: 2000px;
+		float: left;
+		.call{
+			background: #f6f6f6;
+			height: 615px;
+			margin-bottom: 25px;
+		}
+		.classify{
+			height: 650px;
+			background: #f6f6f6;
+		}
+		.ranking{
+			height: 980px;
+			border: 1px solid #f6f6f6;
+		}
+	}
+}

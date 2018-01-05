@@ -7,6 +7,10 @@ require(["config"], function(){
 			// 渲染数据
 			var html = template("list_template", renderData);
 			$(".main").html(html);
+			
+			console.log(html);
 		});
+
 	});
+
 });

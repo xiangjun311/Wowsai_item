@@ -1,0 +1,56 @@
+.main{
+	width: 1100px;
+	height: 672px;
+	padding-top: 100px;
+	.left{
+		width: 656px;
+		float: left;
+		border:1px solid red;
+		form{
+			font-size: 12px;
+			padding-left: 80px;
+			h2{color: #229ca8;font-size: 19px;}
+			p{
+				margin: 20px 0;
+				input{margin: 0 10px;}
+				span{
+					width: 60px;
+					display: inline-block;
+					text-align: right;
+				}
+				i{color: #9c9c9c;}
+			}
+		}
+	}
+	.right{
+		width: 292px;
+		height: 360px;
+		float: right;
+		
+		.right_login{
+			height: 88px;
+			background: #f5f6f1;
+			padding-top: 20px;
+			p{line-height: 25px;}
+			.btn{
+				width: 140px;
+				height: 30px;
+				background: #229ca8;
+				border-color: #229ca8;
+				color: #fff;
+			}
+		}
+		.sanfang_login{
+			background: #f5f6f1;
+			height: 272px;
+			margin-top:2px;
+			text-align: center;
+			padding: 0 20px;
+			p{padding: 15px 0;}
+			a{
+				padding: 0 5px 5px 0;
+				display: inline-block;
+			}
+		}
+	}
+}

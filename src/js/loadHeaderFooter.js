@@ -25,4 +25,7 @@ define(["jquery", "cookie"], function($){
 
 	// 将 footer.html 加载显示到 div.footer 中
 	$(".footer").load("/html/include/footer.html");
+
+	// 将 left.html 加载显示到 div.container 中
+	$(".container .left").load("/html/include/left.html");
 });
