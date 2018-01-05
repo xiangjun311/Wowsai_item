@@ -1,6 +1,38 @@
 /*网页主体*/
 .main {
-	width: 1100px;
-	height:400px;
+	width:100%;
 	background: #f1f1f0;
+	/*banner*/
+	.banner{
+		width: 1920px;
+		height: 525px;
+		/*border: 1px solid red;*/
+		/*padding-left: 286px;*/
+		.item{
+			height: 525px;
+		}
+	}
+	.container{
+		width: 1130px;
+		/*height: 500px;*/
+		background: #38c638;
+		.content{
+			width: 1100px;
+			border: 1px solid red;
+			h2{
+				text-align: center;
+				font-size: 29px;
+				color: #999999;
+			}
+			.box{
+				width: 1130px;
+				display: flex;
+				dl{
+					width: 250px;
+					border: 1px solid;
+				}
+			}
+
+		}
+	}
 }
