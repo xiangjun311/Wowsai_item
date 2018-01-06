@@ -1,0 +1,73 @@
+
+.container{
+	width: 1010px;
+	margin-bottom: 50px;
+	.status{
+		width: 100%;
+		height: 30px;
+		background:url(../images/cart_status.jpg) no-repeat;
+		background-size:100% 30px;
+		margin: 25px 0;
+	}
+	.goods_num{
+		margin-bottom: 15px;
+		text-align: right;
+	}
+	.cart_sum{
+		width: 100%;
+		height: 30px;
+		background: #ccc;
+	}
+	.cart_title,.cart_body{
+		
+		.title_box{
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 38px;
+			border-top: 5px solid #eaeae8;
+			background: #f7f8f3;
+			margin:20px 0;
+		}	
+		.ck{width: 64px;}
+		.title{width: 315px;}
+		.wasai{width: 70px;}
+		.price{width: 110px;}
+		.amount{width: 100px;}
+		.youhui{width: 100px;}
+		.sub{width: 110px;}
+		.oper{width: 100px;}
+		div{
+			padding:0 10px;
+			text-align: center;
+		}
+
+	}
+	.cart_body{
+		width: 100%;
+		.img{
+			width: 85px;
+			height: 85px;
+			border: 1px solid;
+			padding: 4px;
+			img{
+				width: 75px !important;
+				height: 75px !important;
+			}
+		}
+		.product{
+			width: 100%;
+			height: 100px;
+			border: 1px solid #e7e7e7;
+			background: #f7f7f3;
+			display: flex;
+			align-items: center;
+			.ck{width: 53px;}
+			.title{width: 230px;}
+			div{
+				margin:auto 0;
+			}
+		}
+		
+	}
+}

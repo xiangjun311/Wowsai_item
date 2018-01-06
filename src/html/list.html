@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>商品详情</title>
+	<title>商品列表</title>
 	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" href="../css/list.css">
@@ -42,13 +42,18 @@
 		{{each products as product}}
 		
 		<!-- 商品列表 -->
-		<div class="list_box">
-				<img src="{{product.img}}" class="img">
-				<div class="title">{{product.title}}</div>
-				<div class="price">{{product.price}}</div>
-				<div class="add">加入购物车</div>		
+		<div class="list_buy">
+			<img src="{{product.img}}" class="img">
+			<div class="id">{{product.id}}</div>
+			<div class="title">{{product.title}}</div>
+			<div class="wasai">{{product.wasai}}</div>
+			<div class="price">{{product.price}}</div>
+			<div class="youhui">{{product.youhui}}</div>
+			<div class="add">加入购物车</div>		
 		</div>
 		{{/each}}
+
+
 	</script>
 
 	<div class="footer"></div>

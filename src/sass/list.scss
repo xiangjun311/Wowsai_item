@@ -21,12 +21,24 @@
 		/*border:1px solid red;*/
 		width: 856px;
 		float: right;
-		.list_box{
+		.list_buy{
 			width: 242px;
 			height: 356px;
 			background: #37d3d3;
 			float: left;
 			margin-left: 43px;
+			.id{display: none;}
+			.wasai{display: none;}
+			.youhui{display: none;}
+			.add{/*加入购物车按钮*/
+				width: 100px;
+				height: 30px;
+				border: 1px solid;
+				cursor: pointer;
+			}
 		}	
 	}
 }
+
+
+
