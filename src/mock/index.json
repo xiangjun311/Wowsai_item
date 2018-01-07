@@ -1,0 +1,33 @@
+{
+	"res_code" : 0,
+	"res_error" : "",
+	"res_body" : {
+		"data" : [
+			{"id":1 ,"list_title":"当日精选"},
+			{"id":2 ,"list_title":"定制推荐"},
+			{"id":3 ,"list_title":"设计精选"},		
+			{"id":4 ,"list_title":"设计精选"}
+		],
+		"data0" : [
+			{"id":1,"img":"../images/201504241737019947.jpg" , "kind_name":"古典用品桃花润面霜"},
+			{"id":2,"img":"../images/201504241737384704.jpg" , "kind_name":"桃花润面霜"},
+			{"id":3,"img":"../images/201510211656385761.jpg" , "kind_name":"古润面霜"},		
+			{"id":4,"img":"../images/201505151736506747.jpg" , "kind_name":"古润"}
+		],
+		"data1" : [
+			{"id":5,"img":"../images/201406261357018013.jpg" , "kind_name":"桃花润面霜"},
+			{"id":6,"img":"../images/201504211133414024.jpg" , "kind_name":"古润面霜"},
+			{"id":7,"img":"../images/201504241737019947.jpg" , "kind_name":"古典用品桃花润面霜"}
+			
+		],
+		"data2" : [
+			
+			{"id":8,"img":"../images/201504241737019947.jpg" , "kind_name":"桃花润面霜"},
+			{"id":9,"img":"../images/201504241737019947.jpg" , "kind_name":"古润面霜"}		
+		]
+
+		
+
+	}
+
+}

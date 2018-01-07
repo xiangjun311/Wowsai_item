@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>首页</title>
+	<link type="image/x-icon" href="http://cache.wowsai.com/favicon.ico" rel="icon" />
+
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -14,7 +16,7 @@
 	<div class="header"></div>
 
 	<div class="main auto">
-		<!-- banner -->
+		<!-- banner 轮播图-->
 		<div class="banner auto">
 			<!-- 轮播图 -->
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -58,126 +60,39 @@
 		<!-- 网页主题 -->
 		<div class="container_m auto">
 			<div class="content">
-				<h2>当日精选</h2>
-				<div class="box">
-					<dl>
-						<a href="html/particulars.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-				</div>
+				<!-- 第一排 -->
 			</div>
-			<div class="content">
-				<h2>当日精选</h2>
-				<div class="box">
-					<dl>
-						<a href="html/list.html">
-						<dt><img src="images/201504241737019947.jpg"></dt>
-						<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-				</div>
-			</div>
-			<div class="content">
-				<h2>当日精选</h2>
-				<div class="box">
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-				</div>
-			</div>
-			<div class="content">
-				<h2>当日精选</h2>
-				<div class="box">
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-					<dl>
-						<a href="html/list.html" target="_blank">
-							<dt><img src="images/201504241737019947.jpg"></dt>
-							<dd>古典用品</dd>
-						</a>
-					</dl>
-				</div>
-			</div>	
+			
+				
 		</div>
 	</div>
 
 	<div class="footer auto"></div>
-	
+	<!-- 模板 -->
+	<script type="text/html" id="content1_template">
+		<!-- 商品列表行 -->
+		{{each products as product}}		
+		<div class="row auto">
+			<h2 class="list_title">{{product.list_title}}</h2>
+			<div class="box">
+				<!-- 对应店铺id -->							
+			</div>
+		</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="content2_template">
+		{{each products as product}}		
+		<!-- 对应店铺id -->
+		<dl>
+			<!-- 对应店铺链接 -->
+			<a href="html/particulars.html" target="_blank">
+				<div class="id">{{product.id}}</div>
+				<dt><img src="{{product.img}}" class="img"></dt>
+				<div class="dd center-block"><dd class="kind_name">{{product.kind_name}}</dd></div>
+			</a>
+		</dl>
+		{{/each}}
+	</script>
 	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 

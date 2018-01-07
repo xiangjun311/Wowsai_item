@@ -35,16 +35,22 @@ $color:#54d6d6; /*字体颜色*/
 				width: 1100px;
 				display: flex;
 				justify-content: space-around;
+				/*border: 1px solid;*/
+				margin-bottom: 20px;
 				dl{
-					width: 242px;
+					/*width: 242px;*/
 					height: 314px;
 					position: relative;
+					/*border: 1px solid yellow;*/
+					.id{position: absolute;display: none;}
+					.img{height: 100%;}
+					.dd{width: 200px;}
 					dd{
 						width: 200px;
 						height: 55px;
 						position: absolute;
 						background: #fff;
-						left: 21px;
+						/*left: 20px;*/
 						bottom: -20px;
 						color: $color;
 						line-height: 55px;

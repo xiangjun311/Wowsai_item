@@ -7,6 +7,7 @@ require(["config"], function(){
 			// 渲染数据
 			var html = template("list_template", renderData);
 			$(".main").html(html);
+			console.log(html)
 			
 			//利用事件委派，绑定点击事件
 			$(".list_buy").delegate(".add","click",function(event){
