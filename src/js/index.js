@@ -4,7 +4,7 @@ require(["config"], function(){
 		$.getJSON("/mock/index.json", function(data){
 			// 准备渲染数据
 			var renderData = {products : data.res_body.data};
-		
+			console.log(renderData)
 
 			// 渲染行
 			var html = template("content1_template", renderData);
@@ -19,7 +19,9 @@ require(["config"], function(){
 				var html = template("content2_template", renderData);
 				$(this).addClass(`id${i}`).html(html);
 			});
-				
+				console.log($(".img")[0])
+				console.log($(".link_id")[0])
+				console.log($(".link_id")[1])
 					
 		});
 		/**************/

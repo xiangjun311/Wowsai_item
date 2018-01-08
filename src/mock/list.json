@@ -10,7 +10,7 @@
 			{"id":5,"img":"../images/wgood_201512101416474550.jpg" ,"title":"标题5", "wasai":10,"price":32.00,"youhui":"--"},
 			{"id":6,"img":"../images/wgood_201107231613176499.jpg" ,"title":"标题6", "wasai":10,"price":89.00,"youhui":"--"},
 			{"id":7,"img":"../images/wgood_201107231654309897.jpg" ,"title":"标题7", "wasai":10,"price":89.00,"youhui":"--"},
-			{"id":8,"img":"../images/wgood_201504201649257358.jpeg" ,"title":"标题8","wasai":10, "price":89.00,"youhui":"--"},
+			{"id":8,"img":"../images/wgood_201504201649257358.jpeg","title":"标题8","wasai":10, "price":89.00,"youhui":"--"},
 			{"id":9,"img":"../images/wgood_201402211041591139.jpg" ,"title":"标题9", "wasai":10,"price":89.00,"youhui":"--"},
 			{"id":10,"img":"../images/wgood_201402211041591139.jpg" ,"title":"标题10","wasai":10, "price":89.00,"youhui":"--"},
 			{"id":11,"img":"../images/wgood_201402211041591139.jpg" ,"title":"标题11", "wasai":10,"price":89.00,"youhui":"--"},

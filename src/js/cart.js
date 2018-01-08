@@ -7,17 +7,17 @@ require(["config"], function(){
 			$.cookie.json = true;
 			//读取cookie中保存的购物车数据
 			var _products = $.cookie("products")||[];
+			// console.log(_products)
 			//判断
 			if(_products.lenght===0){//购物车为空
 				$("cart_body").html(`购物车为空<a href="list.html">选购</a>`);
 				return;
 			}
 			var renderData = {products :_products};
+			// console.log(renderData)
 			// 渲染数据
 			var html = template("cart_template", renderData);
 			$(".cart_body").html(html);
-
-
 			//通过id查找所在商品是否存在products中 
 			function exist(id,products) {
 				var idx = -1;

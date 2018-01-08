@@ -183,10 +183,53 @@ a:hover {text-decoration:none; }
 		width:242px;
 		height: 2000px;
 		float: left;
-		.call{
+		.shop_information{
 			background: #f6f6f6;
 			height: 615px;
+			padding: 0 15px;
 			margin-bottom: 25px;
+			.title{
+				height: 60px;
+				border: 1px solid;
+				line-height: 60px;
+				color: #c5c5c5;
+				font-size: 20px;
+			}
+			.information{
+				height: 140px;
+				/*background: #a4d4a2;*/
+				border-bottom: 1px dashed #e5e5e5;
+			}
+			.shopkeeper{
+				height: 120px;
+				/*background: #8dc89a;*/
+				padding-top: 15px;
+				border-bottom: 1px dashed #e5e5e5;
+				dl{
+					width: 242px;
+					display: flex;
+					dt{
+						width: 66px;
+						height: 66px;
+						img{width: 100%;height: 100%;}
+					}
+					dd{							
+						span{color:#1db9be;}
+					}
+				}
+				.num_info{
+					display: flex;
+					/*justify-content: space-around;*/
+					p{
+						margin: 0 15px;
+						border: 1px solid red;
+						span{
+							font-size: 25px;
+							color: #1db9be;
+						}
+					}
+				}
+			}
 		}
 		.classify{
 			height: 650px;

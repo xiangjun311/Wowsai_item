@@ -4,6 +4,7 @@ require(["config"], function(){
 		$.getJSON("/mock/list.json", function(data){
 			// 准备渲染数据
 			var renderData = {products : data.res_body.data};
+			console.log(renderData)
 			// 渲染数据
 			var html = template("list_template", renderData);
 			$(".main").html(html);
