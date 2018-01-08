@@ -10,7 +10,7 @@ require(["config"], function(){
 			var html = template("content1_template", renderData);
 			$(".content").html(html);
 		
-			//渲染行内容
+			//渲染行内容，循环添加
 			$(".box").each(function(i){				
 				var renderData = {products: data.res_body}.products;
 				var date = "data";				
