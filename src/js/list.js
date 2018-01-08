@@ -7,11 +7,12 @@ require(["config"], function(){
 			// 渲染数据
 			var html = template("list_template", renderData);
 			$(".main").html(html);
-			console.log(html)
 			
 			//利用事件委派，绑定点击事件
 			$(".list_buy").delegate(".add","click",function(event){
 				//获取当前购物车父级节点元素
+				var x = num.text();
+				console.log(x)
 				var _box =$(this).parent();
 				//将选购商品保存到对象中
 				var prod = {
@@ -23,22 +24,20 @@ require(["config"], function(){
 					youhui:_box.children(".youhui").text(),
 					img:_box.children(".img").attr("src")
 				};
-				console.log(prod);
 				//查找cookie中已有购物车结构
 				$.cookie.json = true;
 				var _products = $.cookie("products")||[];
-				console.log(_products);
+				
 				//判查找id 断是否存在已选购商品，有则自增数量
 				var index = exist(prod.id,_products);
+				
 				if (index === -1) {
 					_products.push(prod);
 				}else{
 					_products[index].amount++;
 				}
 				//将数组存回cookie中
-				var x = $.cookie("products", _products ,{expires:7,path:"/"});
-				// console.log("x")
-
+				$.cookie("products", _products ,{expires:7,path:"/"});
 			});
 			/************事件****************/
 			//通过id查找所在商品是否存在products中 

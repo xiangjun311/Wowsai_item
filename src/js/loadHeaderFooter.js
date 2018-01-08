@@ -4,16 +4,19 @@ define(["jquery", "cookie"], function($){
 	$.ajax("/html/include/header.html").done(function(data){
 		$(".header").html(data);
 	}).done(function(){
+		$.cookie.json = true;
+		var numx = $.cookie("products")||[];
+		var num=numx.length;
+		var num = $(".buy_num").text(num);//设置购物车件数v
 		// 绑定查找的键盘按键事件
-		$(".search .word").keyup(function(){
+		$(".search").keyup(function(){
 			var url = "https://suggest.taobao.com/sug?code=utf-8&q="+ $(this).val() +"&callback=?";
 			$.getJSON(url, function(data){
 				var html = "";
 				data.result.forEach(function(curr){
 					html += "<div>"+ curr[0] +"</div>"
 				});
-
-				$(".search .info").html(html);
+				$(".info").html(html);
 			});
 		});
 	}).done(function(){

@@ -110,6 +110,10 @@ a:hover {text-decoration:none; }
 						top: -17px;
 						padding-left: 15px;
 					}
+					.info{
+						position: relative;
+						z-index: 9999;
+					}
 					a{
 						width: 44px;
 						height: 44px;

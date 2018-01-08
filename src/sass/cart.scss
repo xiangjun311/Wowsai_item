@@ -70,4 +70,16 @@
 		}
 		
 	}
+	.total{
+		height: 42px;
+		background: #ccc;
+		line-height: 42px;
+		.money,i{color: #ff7800;font-size: 17px;}
+		.bt{
+			width: 163px;
+			height: 42px;
+			float: right;
+			background: url(../images/settlement.jpg);
+		}
+	}
 }
