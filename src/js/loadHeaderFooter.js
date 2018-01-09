@@ -8,7 +8,7 @@ define(["jquery", "cookie"], function($){
 		var numx = $.cookie("products")||[];
 		var num=numx.length;
 		var num = $(".buy_num").text(num);//设置购物车件数v
-		// 绑定查找的键盘按键事件
+		// 绑定查找的键盘按键事件,输入提示选项
 		$(".search").keyup(function(){
 			var url = "https://suggest.taobao.com/sug?code=utf-8&q="+ $(this).val() +"&callback=?";
 			$.getJSON(url, function(data){
