@@ -5,8 +5,8 @@
 		"data" : [
 			{"id":1 ,"list_title":"当日精选"},
 			{"id":2 ,"list_title":"定制推荐"},
-			{"id":3 ,"list_title":"设计精选"},		
-			{"id":4 ,"list_title":"设计精选"}
+			{"id":3 ,"list_title":"设计精选"}	
+			
 		],
 		"data0" : [
 			{"id":1,"link_id":"html/detail.html","img":"../images/201504241737019947.jpg" , "kind_name":"古典用品桃花润面霜"},

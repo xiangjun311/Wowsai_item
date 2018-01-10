@@ -1,8 +1,8 @@
 require(["config"], function(){
 	require(["jquery", "template","load"], function($,template){
 		// 异步加载列表页面数据，使用模板引擎渲染
-		$.getJSON("/mock/list.json", function(data){
-			// 准备渲染数据
+		// $.getJSON("/mock/list.json", function(data){
+			
 			//cookie 配置
 			$.cookie.json = true;
 			//读取cookie中保存的购物车数据
@@ -135,5 +135,5 @@ require(["config"], function(){
 			}
 			/************************************************************/
 		});
-	});
+	// });
 });

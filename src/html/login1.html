@@ -3,18 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>登录</title>
+	<title>登录测试</title>
 	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/list.css">
+	<link rel="stylesheet" href="../css/bg_login.css">
 	<script src="../lib/requirejs/require.js" data-main="../js/login"></script>
+</head>
+<html>
 <body>
-	<div class="header"></div>
-	<h1>用户登录</h1>
-	<form id="formLogin">
-		<input type="text" name="username" placeholder="用户名" id="userP"> <br>
-		<input type="password" name="password" placeholder="密码" id="password"><br>
-		<a href="javascript:void(0)" id="btn">登录</a>
-	</form>
+	<!-- <div class="header"></div> -->
+	<h1>用户登录测试</h1>
+	<a type="button" class="bt" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</a>
+
+
+
+	<div class="bg">
+	</div>
+	<div class="body_login">
+		<div class="title">
+			<h3>登录哇噻网</h3><span></span>
+		</div>
+		<form id="formLogin">
+			
+			<div class="form-group">          
+			邮箱：<input type="text" class="form-control" id="recipient-name" placeholder="请使用注册邮箱登录">
+			</div>
+			<div class="form-group">
+			密码：<input type="password" class="form-control" id="message-text" placeholder="密码">
+			</div>
+			<div class="checkbox">
+			<label>
+			<input type="checkbox" value="remember-me" class="ck"> 记住我一周（公共场合慎用）
+			</label>
+			</div>
+			<input type="submit" name="" value="登录" class="btn"><a href="#">忘记密码？</a>
+		</form>
+
+		<!-- 尾部 -->
+		<div class="foot">
+			<fieldset>
+				<legend>还没有哇噻网帐号？立即注册或 使用以下帐号登录</legend>
+			</fieldset>
+			<div class="icn">
+			<a href="javascript:void(0)"><img src="../images/denglu_qq.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_baidu.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_douban.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_kaixin.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_icon1_16.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_icon1_18.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_sina.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_renren.gif"></a>
+			<a href="javascript:void(0)"><img src="../images/denglu_shengda.png"></a>
+			</div>
+		</div>		
+	</div>
+	<!-- <script type="text/javascript">
+	console.log($(".bt"))
+		$(".bt").click(function(){
+			console.log(this);
+		})
+	</script> -->
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+	<!-- <form id="formLogin" action="">
+		<input type="text" name="username" placeholder="用户名" id="username"> <br>
+		<input type="password" name="password" placeholder="密码" id="password"><br>
+		<input type="submit" value="submit">
+		
+	</form> -->
+	<!-- <div class="footer"></div> -->

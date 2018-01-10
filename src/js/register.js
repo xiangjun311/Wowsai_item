@@ -34,40 +34,38 @@ require(["config"], function(){
 		});
 
 		/**********************/
+		/******跨域请求连接服务器注册用户*********/	
 		$.cookie.json = true;
 		$("#formLogin").submit(function(e){
 		e.preventDefault();
-		var  user = $("#userP").val(),
-			 pass = $("#password").val();
-		console.log(user);
-		console.log(pass);
-		var urls = `location:8080/do_register.php`;
+		var email = $("#email").val(),
+			username = $("#username").val(),
+			pass = $("#password").val();		
 			$.ajax({
-				url:urls,
-				type:"POST",
-				data : `username=${user}&password=${pass}`,
-				dataType:"jsonp",
+				url: "http://10.7.187.96/wowsai_php/register.php",
+				data:{
+					email:email,
+					username:username,
+					password:pass
+				},
+				type: "post",
+				datatype:"json",
 				success:function(data){
-					console.log(data);
-					if(data.status==1){
-						$.cookie("key",user,{expires:7,path:"/"});
-						var loginuser=$.cookie('key');
-						if(loginuser){
-							$(".ss").html(loginuser);
-						}
-						$(".tui").show();
-						location="/index.html";
-
-						
-					}else{
-
-						$(".pw").text("密码错误");
-					}									
+					// 将用户信息存入cookie中
+					$.cookie("user", username ,{expires:7,path:"/"});
+					//跳转提示登录成功
+					location="/html/success.html"
+					
+													
 				}
 
 			});
 	    });
-		/***************/	
+		
+		
+		
+		/*******跨域请求连接服务器***********/
+		
 		
 	});
 });
