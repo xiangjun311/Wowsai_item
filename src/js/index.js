@@ -2,10 +2,6 @@ require(["config"], function(){
 	require(["jquery", "template","load"], function($,template){
 		// 异步加载列表页面数据，使用模板引擎渲染
 		$.getJSON("/mock/index.json", function(data){
-			var _user = $.cookie("user")||[];
-				console.log(_user)
-
-
 			// 准备渲染数据
 			var renderData = {products : data.res_body.data};
 
@@ -21,39 +17,27 @@ require(["config"], function(){
 				var renderData = {products:renderData[date]};
 				var html = template("content2_template", renderData);
 				$(this).addClass(`id${i}`).html(html);
-			});					
-		});
+			});	
+
+			$(".dl_product").click(function(i){
+				//将选中商品保存到对象中
+				var prod = {
+					id:$(this).find(".id").text(),
+					title:$(this).find(".title").text(),					
+					price:$(this).find(".price").text(),					
+					img:$(this).find(".img").attr("src")
+				};
+				console.log(prod);
+
+				$.cookie("product", [prod] ,{expires:7,path:"/"});
+				
+			})
+
 		
-		
-		/***********************/
 
-
-		/*****弹出登录界面*****/
-		
-
-
-		/**********************/
+		});//getJSON结束行
 		
 	});
 });
 
 
-/*******模拟数据注册*******/
-/*$.getJSON("/mock/login.json",function(date){
-	var user = date.res_body.data;
-	// console.log(user[0].username)
-	$("btn").click(function(){
-		
-		location="html/register.html";
-	})
-	$.each(user,function(i,attr){
-		var name= $("#recipient-name").val();
-		if(name=attr.username){
-		}else{
-			console.log("未注册")
-		}
-		
-
-	})	
-});*/
-/********************/

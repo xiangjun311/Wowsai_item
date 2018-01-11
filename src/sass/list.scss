@@ -16,7 +16,7 @@
 
 .container{
 	width: 1130px;
-	background: #ccc;
+	/*background: #ccc;*/
 	.main{
 		/*border:1px solid red;*/
 		width: 856px;
@@ -24,17 +24,22 @@
 		.list_buy{
 			width: 242px;
 			height: 356px;
-			background: #37d3d3;
+			/*background: #37d3d3;*/
 			float: left;
 			margin-left: 43px;
 			.id{display: none;}
 			.wasai{display: none;}
 			.youhui{display: none;}
+			.price{color: #ff7800;}
 			.add{/*加入购物车按钮*/
 				width: 100px;
 				height: 30px;
-				border: 1px solid;
+				line-height: 30px;
+				text-align: center;
+				background: #07c7d3;
 				cursor: pointer;
+				border-radius: 5px;
+				color: #fff;
 			}
 		}	
 	}

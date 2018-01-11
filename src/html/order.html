@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>购物车页面</title>
+	<title>确认订单</title>
 	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" href="../css/order.css">
@@ -16,29 +16,28 @@
 	</div>
 	<div class="container">
 		<div class="status"></div>
-		<div class="goods_num">购物车状态</div>
-		<form class="cart_sum">
-			dd 
-		</form>
-
+		<div class="address"><i>确认收货地址</i><a href="" class="floatR">管理收货地址</a></div>
+		<div class="use_new_address">
+			<a href="javascript:void(0)"></a> 
+		</div>
+		<h4>确认订单信息</h4>
 		<div class="cart_title">
 			<div class="title_box">
-				<div class="ck"><label><input type="checkbox" class="ck_all">全选</label></div>	
 				<div class="title">店铺宝贝</div>
 				<div class="wasai">哇噻币</div>
 				<div class="price">单价</div>
 				<div class="amount">数量</div>
 				<div class="youhui">优惠</div>
 				<div class="sub">小计(元)</div>
-				<div class="oper">操作</div>
 			</div>
 		</div>
+
 		<div class="cart_body">
 			<!-- //模板引擎生成DOM -->
 		</div>
 		<div class="total">
 			宝贝总价 <i>￥: </i><span class="money">0.00</span> 元
-			<a href="javascript:void(0)" class="total_btn"></a>
+			<a href="javascript:void(0)" class="total_btn" style="background: url(../images/submit_order.jpg);"></a>
 		</div>	
 	</div>
 	<div class="footer"></div>
@@ -48,22 +47,25 @@
 	<script type="text/html" id="cart_template">
 		{{each products as product}}
 		<div class="product">
-			<div class="ck"><input type="checkbox" class="ck_product"></div>
 			<div class="id" style="display: none;">{{product.id}}</div>	
 			<div class="img"><img src="{{product.img}}" style="width:90px; height:80px;"></div>
 			<div class="title">{{product.title}}</div>
 			<div class="wasai">{{product.wasai}}</div>
 			<div class="price">{{product.price}}</div>
 			<div class="amount"><span class="minus">-</span><input type="text" class="amount_num" value="{{product.amount}}" style="width:40px; text-align: center;"><span class="add">+</span></div>
-			<div class="youhui">{{product.youhui}}</div>
+			<div class="youhui"><select>
+						<option>不适用优惠</option>
+					</select></div>
 			<div class="sub">{{product.price * product.amount}}</div>
-			<div class="oper"><a href="javascript:void(0)" class="del">删除</a></div>
 		</div>
 		{{/each}}
 	</script>
 
 	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		// alert("请选择收货人地址")
+	</script>
 
 </body>
 </html>

@@ -82,13 +82,15 @@
 	<script type="text/html" id="content2_template">
 		{{each products as product}}		
 		<!-- 对应店铺id -->
-		<dl>
+		<dl class="dl_product">
 			<!-- 对应店铺链接 -->
-			<a href="{{product.link_id}}" target="_blank" class="link_id">
-				<div class="link_id" href="{{product.link_id}}"></div>
+			<a href="html/detail.html">
+				<div class="id" style="display: none;">{{product.id}}</div>
+				<div class="title" style="display: none;">{{product.title}}</div>
 				<dt><img src="{{product.img}}" class="img"></dt>
 				<div class="dd center-block"><dd class="kind_name">{{product.kind_name}}</dd></div>
-			</a>
+				<div class="price" style="display: none;">{{product.price}}</div>
+			</i>
 		</dl>
 		{{/each}}
 	</script>

@@ -13,10 +13,16 @@
 		margin-bottom: 15px;
 		text-align: right;
 	}
-	.cart_sum{
+	.use_new_address{
 		width: 100%;
 		height: 30px;
 		background: #ccc;
+		a{
+			background: url(../images/use_new_address.jpg) no-repeat;
+			display: block;
+			width: 93px;
+			height: 23px;
+		}
 	}
 	.cart_title,.cart_body{
 		

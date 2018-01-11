@@ -12,6 +12,7 @@ require(["config"], function(){
 			//利用事件委派，绑定点击事件
 			$(".list_buy").delegate(".add","click",function(event){
 				//获取当前购物车父级节点元素
+				console.log(this)
 				var _box =$(this).parent();
 				//将选购商品保存到对象中
 				var prod = {

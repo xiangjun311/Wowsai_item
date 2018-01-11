@@ -9,10 +9,10 @@
 			
 		],
 		"data0" : [
-			{"id":1,"link_id":"html/detail.html","img":"../images/201504241737019947.jpg" , "kind_name":"古典用品桃花润面霜"},
-			{"id":2,"link_id":"html/detail.html","img":"../images/201504241737384704.jpg" , "kind_name":"桃花润面霜"},
-			{"id":3,"link_id":"html/detail.html","img":"../images/201510211656385761.jpg" , "kind_name":"古润面霜"},		
-			{"id":4,"link_id":"html/detail.html","img":"../images/201505151736506747.jpg" , "kind_name":"古润"}
+			{"id":1,"title":"花月堂古方纯手作《美人红胭脂膏》真正的胭脂红","price":96,"img":"../images/201504241737019947.jpg" , "kind_name":"古典用品桃花润面霜"},
+			{"id":2,"title":"花月堂古方纯手作《美人红胭脂膏》真","price":97,"img":"../images/201504241737384704.jpg" , "kind_name":"桃花润面霜"},
+			{"id":3,"title":"花月堂古方纯手作《美的胭脂红","price":98,"img":"../images/201510211656385761.jpg" , "kind_name":"古润面霜"},		
+			{"id":4,"title":"花月堂古方纯脂膏》真正的胭脂红","price":99,"img":"../images/201505151736506747.jpg" , "kind_name":"古润"}
 		],
 		"data1" : [
 			{"id":5,"img":"../images/201406261357018013.jpg" , "kind_name":"桃花润面霜"},

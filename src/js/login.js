@@ -8,7 +8,9 @@ require(["config"], function(){
 		e.preventDefault();
 		var email = $("#email").val(),
 			username = $("#username").val(),
-			pass = $("#password").val();		
+			pass = $("#password").val();
+
+			console.log(email,pass)		
 			$.ajax({
 				url: "http://10.7.187.96/wowsai_php/login.php",
 				data:{
@@ -31,8 +33,12 @@ require(["config"], function(){
 			});
 	    });		
 		/*******跨域请求连接服务器***********/
-		$(".bt").click(function(){
-			console.log(this)
-		})
+
+		/**********************************/
+		// $.ajax("/html/include/header.html").done(function(data){
+		// 	$(".header").html(data);
+		// }).done(function(){
+		// 	console.log($(".login"))
+		// });
     });
 });

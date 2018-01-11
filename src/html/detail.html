@@ -6,8 +6,8 @@
 	<title>桃花霜花月堂古代面脂面霜淡斑水润清透消炎祛痘控油收敛秘传花镜 - 哇噻网</title>
 	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
-	<link rel="stylesheet" href="../css/particulars.css">
-	<script src="../lib/requirejs/require.js" data-main="../js/particulars"></script>
+	<link rel="stylesheet" href="../css/detail.css">
+	<script src="../lib/requirejs/require.js" data-main="../js/detail"></script>
 </head>
 <body>
 	<div class="header"></div>
@@ -17,7 +17,7 @@
 			<div class="left"></div>
 			<!-- 右边部分 -->
 			<div class="right">
-				<div class="commodity">
+				<!-- <div class="commodity">
 					<div class="img">
 						<img src="../images/big_201504201649257358.jpeg">
 						<p>
@@ -40,11 +40,40 @@
 												
 					</div>
 					
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
 	<div class="footer"></div>
+	<script type="text/html" id="detail_template">
+		{{each products as product}}		
+		<div class="commodity">
+			<div class="imgs">
+				<img src="{{product.img}}" class="img">
+				<p class="share">
+					分享到：
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</p>
+			</div>
+			<div class="infor_cart">
+				<h4 class="title">{{product.title}}</h4>		
+				<div class="id">{{product.id}}</div>
+				<div class="prices">价格：<span class="price">{{product.price}}</span></div>
+				<div class="yufei">运费：</div>
+				<div class="pingjia">评价：</div>
+				<div class="amount">购买数量</div>
+				<div class="add_bg">
+					<div class="add btn btn-primary">加入购物车</div>
+				</div>
+										
+			</div>
+			
+		</div>
+		{{/each}}
+	</script>
 
 	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>

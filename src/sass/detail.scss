@@ -1,17 +1,17 @@
 .main{
 	.container{
 		width: 1130px;
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		padding-top:25px;
 		.right{
 			width: 835px;
 			min-height: 1000px;
-			border: 1px solid red;
+			/*border: 1px solid red;*/
 			float: right;
 			.commodity{
 				height: 460px;
-				border:1px solid red;
-				.img{
+				/*border:1px solid red;*/
+				.imgs{
 					width: 420px;
 					height: 450px;
 					float: left;
@@ -20,7 +20,9 @@
 					height: 420px;
 					
 					}
-					p{
+					.share{
+						height: 60px;
+						padding-bottom: 15px;
 						line-height: 35px;
 						a{
 							display: inline-block;
@@ -39,7 +41,7 @@
 					height: 420px;
 					float: right;
 					/*border: 1px solid;*/
-					p{
+					.title{
 						font-size: 18px;
 						border-bottom: 1px solid #f6f6f6;
 						line-height: 30px;

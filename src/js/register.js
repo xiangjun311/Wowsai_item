@@ -40,7 +40,11 @@ require(["config"], function(){
 		e.preventDefault();
 		var email = $("#email").val(),
 			username = $("#username").val(),
-			pass = $("#password").val();		
+			pass = $("#password").val();
+			console.log($("#email"))		
+			console.log(email)		
+			console.log(username)		
+			console.log(pass)		
 			$.ajax({
 				url: "http://10.7.187.96/wowsai_php/register.php",
 				data:{
@@ -51,8 +55,9 @@ require(["config"], function(){
 				type: "post",
 				datatype:"json",
 				success:function(data){
+					console.log(data)
 					// 将用户信息存入cookie中
-					$.cookie("user", username ,{expires:7,path:"/"});
+					$.cookie("loginUser", username ,{expires:7,path:"/"});
 					//跳转提示登录成功
 					location="/html/success.html"
 					
